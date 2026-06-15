@@ -1,16 +1,16 @@
 // Pre Increment
-// Pre increment -> ++a ->. increse the value and then assign.
+// Pre increment -> ++a -> increase the value and then assign
 let a = 10;
-let b = ++a; // (increment the a by 1)
-console.log(b);
-console.log(a);
+let b = ++a; // (increment the a by 1) It means a = a+1
+console.log(b); // 11
+console.log(a); // 11
 
 // Post Increment
-// post ++ -> first assign the value and then increase.
+// post ++ -> first assign the value and then increase
 let a_post = 10;
 let b = a_post++;
-console.log(a_post);
-console.log(b);
+console.log(a_post); // 11
+console.log(b); // 10
 
 // Decrement
 let a = 10;
@@ -25,5 +25,18 @@ console.log(a);  // 9
 
 let a = 34;
 let result = a++;
-console.log(result);
-console.log(a); 
+console.log(result); // 34
+console.log(a); // 35 
+
+let a = 10;
+console.log(++a + a); // 22
+console.log(a); // 11
+
+
+// let a = 10;
+// console.log(a++ + ++a);
+// console.log(a);
+
+let a = 10;
+console.log(++a + ++a);
+console.log(a);
