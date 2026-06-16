@@ -12,14 +12,15 @@ let b = a_post++;
 console.log(a_post); // 11
 console.log(b); // 10
 
-// Decrement
+// Pre Decrement
 let a = 10;
-let b = --a; // (increment the a by 1)
+let b = --a; // (Decrement the a by 1)
 console.log(b); // 9
 console.log(a);  // 9
 
+// Post Decrement
 let a = 10;
-let b = a--; // (increment the a by 1)
+let b = a--; // (Decrement the a by 1)
 console.log(b); // 10
 console.log(a);  // 9
 
@@ -27,16 +28,3 @@ let a = 34;
 let result = a++;
 console.log(result); // 34
 console.log(a); // 35 
-
-let a = 10;
-console.log(++a + a); // 22
-console.log(a); // 11
-
-
-// let a = 10;
-// console.log(a++ + ++a);
-// console.log(a);
-
-let a = 10;
-console.log(++a + ++a);
-console.log(a);
