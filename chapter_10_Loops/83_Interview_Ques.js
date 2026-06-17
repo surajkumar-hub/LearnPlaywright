@@ -7,4 +7,4 @@ while (count < 5) {
 let n = 1;
 do {
     console.log(n);
-} while (n < 3);
+} while (n < 3); // this will run for infinite bcoz condition will always true

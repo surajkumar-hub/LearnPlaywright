@@ -1,0 +1,24 @@
+let arr = [1, 2, 3];
+arr.push(4, 5, 6);
+console.log(arr);
+// arr =  [1, 2, 3, 4, 5, 6]
+// index = 0,1,2,3,4,5
+
+// splice(start, deleteCount, ...itemsToAdd)
+arr.splice(2, 1);
+console.log(arr); // [1, 2, 4, 5, 6]
+/* splice - Removes elements from an array and, if necessary, inserts new 
+elements in their place, returning the deleted elements */
+
+arr.splice(2, 0, 99); // It means from the 2nd index, don't delete the element 
+// instead add 99 - O/P: [1, 2, 99, 3, 4, 5, 6 ]
+arr.splice(2, 1, 99); // replace - O/P: [1, 2, 99, 4, 5, 6 ]
+console.log(arr);
+
+
+// arr = [1, 2, 3, 4, 5, 6]
+// index=0,1,2,3,4,5
+
+arr.splice(1, 2, 10, 20); // It means on index 1, delete 2 elements i.e. 2 & 3
+// and replace them with 10 & 20
+console.log(arr); // [1, 10, 20, 4, 5, 6 ]
