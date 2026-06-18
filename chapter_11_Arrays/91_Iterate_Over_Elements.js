@@ -1,4 +1,4 @@
-// Iterate - Go from one to another // 
+// Iterate - Go from one to another
 
 let tests = ["login", "checkout", "search"];
 
