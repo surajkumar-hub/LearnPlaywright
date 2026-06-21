@@ -1,0 +1,48 @@
+# JavaScript String Methods — Cheat Sheet
+
+A concise reference of common `String` methods with one-line examples and results.
+
+| Method | Example | Result |
+|---|---:|---|
+| `charAt(index)` | `"abc".charAt(1)` | `'b'` |
+| `charCodeAt(index)` | `"A".charCodeAt(0)` | `65` |
+| `codePointAt(index)` | `"𠮷".codePointAt(0)` | `134071` |
+| `concat(...strings)` | `"a".concat("b","c")` | `'abc'` |
+| `endsWith(search[, len])` | `"hello".endsWith("lo")` | `true` |
+| `includes(search[, pos])` | `"hello".includes("ell")` | `true` |
+| `indexOf(search[, from])` | `"hello".indexOf("l")` | `2` |
+| `lastIndexOf(search[, from])` | `"hello".lastIndexOf("l")` | `3` |
+| `localeCompare(str)` | `"a".localeCompare("b")` | `-1` |
+| `match(regexp)` | `"abc".match(/b/)` | `['b', index:1, input:'abc']` |
+| `matchAll(regexp)` | `Array.from("a1b2".matchAll(/\d/g))` | `[['1'], ['2']]` |
+| `normalize([form])` | `"e\u0301".normalize('NFC')` | `'é'` |
+| `padEnd(len[, pad])` | `"x".padEnd(3,'-')` | `'x--'` |
+| `padStart(len[, pad])` | `"x".padStart(3,'-')` | `'--x'` |
+| `repeat(count)` | `"ha".repeat(3)` | `'hahaha'` |
+| `replace(search, replace)` | `"foo".replace('f','b')` | `'boo'` |
+| `replaceAll(search, replace)` | `"aaa".replaceAll('a','b')` | `'bbb'` |
+| `search(regexp)` | `"abc".search(/b/)` | `1` |
+| `slice(start[, end])` | `"hello".slice(1,4)` | `'ell'` |
+| `split([sep[, limit]])` | `"a,b,c".split(',')` | `['a','b','c']` |
+| `startsWith(search[, pos])` | `"hello".startsWith('he')` | `true` |
+| `substr(start[, len])` (deprecated) | `"hello".substr(1,2)` | `'el'` |
+| `substring(start[, end])` | `"hello".substring(1,3)` | `'el'` |
+| `toLowerCase()` | `"A".toLowerCase()` | `'a'` |
+| `toUpperCase()` | `"a".toUpperCase()` | `'A'` |
+| `toLocaleLowerCase()` | `"I".toLocaleLowerCase('tr')` | locale-aware |
+| `toLocaleUpperCase()` | `"i".toLocaleUpperCase('tr')` | locale-aware |
+| `trim()` | `' x '.trim()` | `'x'` |
+| `trimStart()` / `trimLeft()` | `' x'.trimStart()` | `'x'` |
+| `trimEnd()` / `trimRight()` | `'x '.trimEnd()` | `'x'` |
+| `toString()` | `('a').toString()` | `'a'` |
+| `valueOf()` | `('a').valueOf()` | `'a'` |
+| `String.fromCharCode(...codes)` | `String.fromCharCode(65)` | `'A'` |
+| `String.fromCodePoint(...points)` | `String.fromCodePoint(0x1F600)` | `'😀'` |
+| ``String.raw`template` `` | `` String.raw`a\nb` `` | `'a\\nb'` |
+
+**Legacy/Deprecated (avoid in modern code):** `anchor()`, `big()`, `blink()`, `bold()`, `fixed()`, `fontcolor()`, `fontsize()`, `italics()`, `link()`, `small()`, `strike()`, `sub()`, `sup()` — return HTML strings.
+
+If you'd like, I can also:
+- expand each entry with short notes or multiple examples,
+- add usage tips (performance, Unicode caveats), or
+- save a prettier PDF/HTML export.
